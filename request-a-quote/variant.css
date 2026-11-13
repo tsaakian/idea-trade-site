@@ -1,0 +1,17 @@
+/* Integration behavior, intentionally minimal so Stitch visuals remain recognizable. */
+html{overflow-x:hidden}body{max-width:100%;overflow-x:hidden}
+.idt-preview-notice{display:block!important;padding:12px 14px;margin:0 0 18px!important;background:#fff4e6;color:#773c0a;border:1px solid #e3b47a;border-radius:7px;font:600 13px/1.5 Inter,Arial,sans-serif}
+.idt-form-status{padding:16px;margin:16px 0;color:#7f1d1d;background:#fef2f2;border-left:4px solid #b91c1c;font:600 14px/1.5 Inter,Arial,sans-serif}
+.idt-form{font:400 15px/1.55 Inter,Arial,sans-serif;max-width:100%;padding:12px 0;color:#17253a}
+.idt-form *{box-sizing:border-box}.idt-field{display:flex;flex-direction:column;gap:6px;min-width:0}.idt-field label{font-size:13px;font-weight:700;color:#28354b}
+.idt-form input:not([type=checkbox]),.idt-form select,.idt-form textarea{background:#fff!important;border:1px solid #b8c3d1!important;border-radius:6px!important;color:#152238!important;width:100%;max-width:100%;padding:12px 13px;min-height:45px;outline-offset:3px}
+.idt-form input:focus,.idt-form textarea:focus,.idt-form select:focus{outline:2px solid #d76833!important}
+.idt-form textarea{min-height:130px;resize:vertical}.idt-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}
+.idt-form .idt-full{grid-column:1/-1}.idt-form .idt-check{display:flex;align-items:flex-start;gap:10px;margin-top:18px;line-height:1.5;font-size:13px}
+.idt-form .idt-check input{width:18px;height:18px;flex:none;margin-top:2px}.idt-form .idt-check a{text-decoration:underline;color:#a34111}
+.idt-form button[type=submit]{margin-top:19px;padding:14px 28px;background:#bf4f18;color:#fff;border:0;border-radius:6px;font:700 15px Inter,Arial,sans-serif;cursor:pointer}
+.idt-form button[type=submit]:hover{background:#933712}.idt-form .idt-upload{padding:14px 16px;border:1px dashed #b8c3d1;border-radius:7px;background:#f8fafc;font-size:12px;color:#475569}
+.idt-missing-image{background:#e4e9f2;outline:1px dashed #9daabe}
+#idt-menu-overlay{position:fixed;z-index:2147483647;inset:0;background:#101d32;color:white;padding:25px;overflow-y:auto;font:600 16px Inter,Arial,sans-serif}
+#idt-menu-overlay[hidden]{display:none!important}#idt-menu-overlay a{display:block;padding:14px;border-bottom:1px solid #3b485d;color:white;text-decoration:none}#idt-close-menu{display:block;margin-left:auto;color:white;border:1px solid #ffffff44;padding:12px;font-size:30px;background:transparent;cursor:pointer}
+@media(max-width:600px){.idt-form-grid{grid-template-columns:1fr}.idt-form .idt-full{grid-column:auto}}

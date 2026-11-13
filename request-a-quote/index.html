@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request a Quote | IDEA TRADE</title>
+<meta name="description" content="Submit a business quotation request with product, quantity, delivery, and specification details for review by IDEA TRADE.">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<meta property="og:title" content="Request a Quote | IDEA TRADE">
+<meta property="og:description" content="Submit a business quotation request with product, quantity, delivery, and specification details for review by IDEA TRADE.">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Raleway:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+
+
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+<link href="./desktop.css" rel="stylesheet"/><link href="./variant.css" rel="stylesheet"/><link href="./responsive.css?v=header-2" rel="stylesheet"/><meta content="noindex,nofollow" name="robots"/><script src="https://web3forms.com/client/script.js" async defer></script><script defer src="./preview.js"></script><script defer src="../form-handler.js"></script></head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<header class="w-full bg-surface-container-lowest border-b border-outline-variant sticky top-0 z-50"><div class="max-w-7xl mx-auto px-margin flex items-center justify-between h-16 w-full">
+<div class="flex items-center gap-space-md">
+<a class="flex flex-col" href="../" target="_top"><img alt="IDEA TRADE Logo" class="idt-header-logo object-contain shrink-0" src="./idea-trade-logo.png"/></a>
+</div>
+<!-- Navigation links (Desktop) -->
+<nav class="hidden md:flex items-center gap-space-lg">
+<a class="text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary transition-colors" data-route="home" href="../" target="_top">Home</a>
+<a class="text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary transition-colors" data-route="capabilities" href="../capabilities/" target="_top">Capabilities</a>
+<a class="text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary transition-colors" data-route="products-industries" href="../products-industries/" target="_top">Products &amp; Industries</a>
+<a class="text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary transition-colors" data-route="government-commercial" href="../government-commercial/" target="_top">Government &amp; Commercial</a>
+<a class="text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary transition-colors" data-route="suppliers" href="../suppliers/" target="_top">Suppliers</a>
+<a class="text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary transition-colors" data-route="about" href="../about/" target="_top">About</a>
+</nav>
+<!-- Trailing CTAs (Desktop & Mobile) -->
+<div class="flex items-center gap-space-md">
+<a class="hidden sm:inline-flex text-on-surface-variant font-body-md text-body-md hover:text-secondary transition-colors" data-route="contact" href="../contact/" target="_top">Contact</a>
+<a class="hidden sm:inline-flex bg-secondary hover:bg-on-secondary-fixed-variant text-on-primary px-space-md py-space-sm rounded text-label-md font-label-md transition-colors duration-150 items-center gap-1" data-route="request-a-quote" href="./#rfq-form" target="_top">
+<span class="">Request a Quote</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<!-- Mobile Hamburger Toggle -->
+<button aria-expanded="false" aria-label="Toggle Mobile Navigation" class="md:hidden flex items-center justify-center p-2 rounded text-on-surface hover:bg-surface-container-low transition-colors" id="mobile-menu-toggle" onclick="var drawer = document.getElementById('mobile-drawer'); var open = drawer.classList.toggle('hidden') === false; this.setAttribute('aria-expanded', open);" type="button">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</div>
+<!-- Collapsible Mobile Navigation Drawer -->
+<div class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant px-margin py-space-md shadow-none" id="mobile-drawer">
+<nav class="flex flex-col space-y-1">
+<a class="flex items-center h-10 px-3 text-body-md text-on-surface-variant hover:text-secondary hover:bg-surface-container-low rounded transition-colors" data-route="home" href="../" target="_top">Home</a>
+<a class="flex items-center h-10 px-3 text-body-md text-on-surface-variant hover:text-secondary hover:bg-surface-container-low rounded transition-colors" data-route="capabilities" href="../capabilities/" target="_top">Capabilities</a>
+<a class="flex items-center h-10 px-3 text-body-md text-on-surface-variant hover:text-secondary hover:bg-surface-container-low rounded transition-colors" data-route="products-industries" href="../products-industries/" target="_top">Products &amp; Industries</a>
+<a class="flex items-center h-10 px-3 text-body-md text-on-surface-variant hover:text-secondary hover:bg-surface-container-low rounded transition-colors" data-route="government-commercial" href="../government-commercial/" target="_top">Government &amp; Commercial</a>
+<a class="flex items-center h-10 px-3 text-body-md text-on-surface-variant hover:text-secondary hover:bg-surface-container-low rounded transition-colors" data-route="suppliers" href="../suppliers/" target="_top">Suppliers</a>
+<a class="flex items-center h-10 px-3 text-body-md text-on-surface-variant hover:text-secondary hover:bg-surface-container-low rounded transition-colors" data-route="about" href="../about/" target="_top">About</a>
+<a class="flex items-center h-10 px-3 text-body-md text-on-surface-variant hover:text-secondary hover:bg-surface-container-low rounded transition-colors" data-route="contact" href="../contact/" target="_top">Contact</a>
+<div class="pt-space-sm mt-space-xs border-t border-outline-variant/40">
+<a class="flex items-center justify-center gap-2 w-full bg-secondary hover:bg-on-secondary-fixed-variant text-on-primary py-space-sm px-space-md rounded text-title-md font-title-md transition-colors" data-route="request-a-quote" href="./#rfq-form" onclick="document.getElementById('mobile-drawer').classList.add('hidden');" target="_top">
+<span class="">Request a Quote</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</nav>
+</div></header>
+<!-- Breadcrumbs Bar -->
+<div class="bg-surface-bright border-b border-outline-variant/60 py-space-xs">
+<div class="max-w-7xl mx-auto px-margin flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" data-route="home" href="../" target="_top">Home</a>
+<span class="text-outline text-[12px]">/</span>
+<span class="text-primary font-medium">Request a Quote</span>
+</div>
+</div>
+<main class="w-full">
+<!-- HERO SECTION -->
+<section class="max-w-7xl mx-auto px-margin pt-space-xl pb-space-xl border-b border-outline-variant">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Hero Left Column -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 mb-space-md">
+<span class="w-2 h-2 bg-secondary inline-block rounded-none"></span>
+<span class="text-label-caps font-label-caps uppercase text-secondary tracking-wider">REQUEST FOR QUOTATION</span>
+</div>
+<h1 class="text-display-hero-mobile lg:text-display-hero font-display-hero text-on-surface mb-space-md tracking-tight leading-tight">Request a Quote for Defined Products.</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-space-lg max-w-2xl leading-relaxed">
+            Submit your product specifications, part numbers, quantities, delivery requirements, or supporting documentation. IDEA TRADE will review the requirement and evaluate available sourcing options based on product fit, supplier availability, commercial terms, and delivery conditions.
+          </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto">
+<a class="bg-secondary hover:bg-on-secondary-fixed-variant text-on-primary px-space-lg py-space-md rounded text-title-md font-title-md transition-colors inline-flex items-center justify-center gap-2 min-h-[44px] w-full sm:w-auto text-center" href="./#rfq-form">
+<span class="">Submit Quote Request</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="north_east">north_east</span>
+</a>
+<a class="bg-surface-container-lowest border border-outline-variant text-on-surface hover:bg-surface-container-low px-space-lg py-space-md rounded text-title-md font-title-md transition-colors inline-flex items-center justify-center min-h-[44px] w-full sm:w-auto text-center" data-route="contact" href="../contact/" target="_top">
+              Contact Us
+            </a>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-outline-variant/60 w-full flex items-center gap-space-md text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="verified_user">verified_user</span>
+              Non-binding technical evaluation
+            </span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="inventory">inventory</span>
+              BOM &amp; single SKU intake
+            </span>
+</div>
+</div>
+<!-- Hero Right Technical Media Module -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="bg-surface-container-lowest border border-outline-variant p-2 rounded shadow-none">
+<div class="overflow-hidden border border-outline-variant/60 relative bg-surface-container-low aspect-[4/3]">
+<img class="w-full h-full object-cover" data-alt="An authoritative commercial procurement inspection room with supply chain managers in executive attire analyzing structural technical documents and architectural logistics plans. The environment is bathed in clinical daylight, highlighting blueprint specifications, digital tablet manifests, and precision supply chain spreadsheets in a palette of dark charcoal, slate grey, and crisp white." src="./asset-external-02.jpg" alt="An authoritative commercial procurement inspection room with supply chain managers in executive attire analyzing structural technical documents and architectural logistics plans. The environment is bathed in clinical daylight, highlighting blueprint specifications, digital tablet manifests, and precision supply chain spreadsheets in a palette of dark charcoal, slate grey, and crisp white."/>
+</div>
+<div class="p-space-sm bg-surface-container-lowest flex items-center justify-between border-t border-outline-variant/40 mt-1">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block"></span>
+<span class="text-[10px] font-label-caps uppercase text-on-surface-variant tracking-wider">PROCUREMENT EVALUATION</span>
+</div>
+<span class="text-body-sm font-body-sm text-outline text-[11px]">Requirement-based sourcing &amp; commercial review.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: WHAT YOU CAN SUBMIT -->
+<section class="max-w-7xl mx-auto px-margin py-space-xl border-b border-outline-variant">
+<div class="mb-space-lg max-w-3xl">
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="w-2 h-2 bg-secondary inline-block rounded-none"></span>
+<span class="text-label-caps font-label-caps uppercase text-secondary tracking-wider">QUOTE REQUEST INPUTS</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight mb-space-sm">
+          Start With the Information You Already Have
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          A quote request does not need to begin with a complete specification package. Submit the information currently available and include supporting documents where applicable.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-space-md flex flex-col justify-between rounded">
+<div>
+<div class="w-9 h-9 bg-surface-container-low border border-outline-variant/60 flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[20px]" data-icon="tag">tag</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mb-space-xs">Part Numbers &amp; Product Details</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Manufacturer part numbers, model numbers, product names, descriptions, dimensions, materials, or technical requirements.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/40 text-[11px] font-label-caps uppercase text-outline">
+            SPECIFICATION DATA
+          </div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-space-md flex flex-col justify-between rounded">
+<div>
+<div class="w-9 h-9 bg-surface-container-low border border-outline-variant/60 flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[20px]" data-icon="inventory_2">inventory_2</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mb-space-xs">Quantity &amp; Volume</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Required quantity, estimated recurring volume, package size, minimum batch requirements, or multi-item quantities.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/40 text-[11px] font-label-caps uppercase text-outline">
+            VOLUME METRICS
+          </div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-space-md flex flex-col justify-between rounded">
+<div>
+<div class="w-9 h-9 bg-surface-container-low border border-outline-variant/60 flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[20px]" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mb-space-xs">Delivery Requirements</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Required delivery date, destination ZIP code, delivery location, shipping requirements, or scheduling considerations.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/40 text-[11px] font-label-caps uppercase text-outline">
+            LOGISTICS PARAMETERS
+          </div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-space-md flex flex-col justify-between rounded">
+<div>
+<div class="w-9 h-9 bg-surface-container-low border border-outline-variant/60 flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[20px]" data-icon="description">description</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mb-space-xs">Supporting Documents</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Specifications, drawings, BOMs, parts lists, spreadsheets, product links, RFQs, or other relevant documentation.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/40 text-[11px] font-label-caps uppercase text-outline">
+            TECHNICAL ATTACHMENTS
+          </div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: PRIMARY RFQ FORM -->
+<section class="max-w-7xl mx-auto px-margin py-space-xl" id="rfq-form">
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-space-lg lg:p-space-xl">
+<!-- Form Header -->
+<div class="border-b border-outline-variant pb-space-lg mb-space-xl">
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="w-2 h-2 bg-secondary inline-block rounded-none"></span>
+<span class="text-label-caps font-label-caps uppercase text-secondary tracking-wider">QUOTE SUBMISSION</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">Request a Quote</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-1">
+            Provide as much information as available. Fields marked required (<span class="text-secondary font-bold">*</span>) should be clearly identified.
+          </p>
+</div>
+<form action="https://api.web3forms.com/submit" class="idt-form" data-idea-trade-form="quote" data-web3forms-subject="IDEA TRADE - Quote Request" method="post">
+<input name="access_key" type="hidden" value="9e11a31e-c26c-4d2c-b848-75252fc7a65a"/><input name="subject" type="hidden" value="IDEA TRADE - Quote Request"/><input name="from_name" type="hidden" value="IDEA TRADE Quote Request"/><input aria-hidden="true" autocomplete="off" name="botcheck" tabindex="-1" type="checkbox" value="1" style="display:none"/><div class="h-captcha" data-captcha="true"></div>
+<h2 style="font:600 clamp(24px,3vw,32px) Raleway,Inter,sans-serif;margin:0 0 8px;color:#111c2e">Request a Quote</h2>
+<p style="margin:0 0 14px;color:#475569;max-width:650px">Tell us which defined product you need priced. If you do not have an exact part number, you may leave that field blank.</p>
+<div class="idt-form-grid"><div class="idt-field"><label for="idt-name">Contact name *</label><input id="idt-name" name="name" placeholder="Full name" required="" type="text"/></div><div class="idt-field"><label for="idt-organization">Company / Organization *</label><input id="idt-organization" name="organization" placeholder="Company name" required="" type="text"/></div><div class="idt-field"><label for="idt-email">Business email *</label><input id="idt-email" name="email" placeholder="name@company.com" required="" type="email"/></div><div class="idt-field"><label for="idt-phone">Telephone (optional)</label><input id="idt-phone" name="phone" placeholder="+1 818 ..." type="tel"/></div><div class="idt-field"><label for="idt-product">Product description *</label><input id="idt-product" name="product" placeholder="Product / model / specification" required="" type="text"/></div><div class="idt-field"><label for="idt-quantity">Quantity *</label><input id="idt-quantity" name="quantity" placeholder="e.g. 200" required="" type="text"/></div><div class="idt-field"><label for="idt-manufacturer">Manufacturer / brand (if known)</label><input id="idt-manufacturer" name="manufacturer" placeholder="Optional" type="text"/></div><div class="idt-field"><label for="idt-sku">Part number / SKU (if known)</label><input id="idt-sku" name="sku" placeholder="Optional" type="text"/></div><div class="idt-field"><label for="idt-destination">Delivery city / ZIP *</label><input id="idt-destination" name="destination" placeholder="City, state, ZIP" required="" type="text"/></div><div class="idt-field"><label for="idt-delivery_date">Target delivery date (optional)</label><input id="idt-delivery_date" name="delivery_date" placeholder="" type="date"/></div><div class="idt-field"><label for="idt-notes">Specifications / commercial notes</label><textarea id="idt-notes" name="notes" placeholder="Material, dimensions, substitutions, quotation validity..."></textarea></div></div>
+<div class="idt-upload"><strong>Attachments are not enabled in this preview.</strong> In the published version, relevant specifications and drawings must be transferred using a secure document-handling service. Do not send controlled or highly confidential documents through an unverified form.</div>
+<label class="idt-check"><input name="privacy_agreement" required="" type="checkbox"/><span>I have read the <a href="../privacy-policy/" target="_top">Privacy Policy</a> and agree that IDEA TRADE may use this information to review my inquiry.</span></label>
+<button type="submit">Request a Quote</button>
+<p style="color:#64748b;font-size:12px;margin:8px 0">An inquiry is not a purchase order or guaranteed quote.</p>
+<p class="idt-form-status" hidden="" role="status"></p>
+</form>
+<!-- Accessible Institutional Confirmation Modal Dialog (Strictly Marked Demo Preview & No Fake Backend Reference) -->
+<div aria-labelledby="modal-title" aria-modal="true" class="hidden fixed inset-0 z-50 overflow-y-auto bg-primary/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6" id="rfq-confirmation-modal" role="dialog">
+<div class="bg-surface-container-lowest border border-outline-variant rounded max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-none text-on-surface">
+<!-- Modal Banner: Clear Demo Mode Indication -->
+<div class="bg-primary text-on-primary px-space-lg py-2.5 flex items-center justify-between border-b border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary text-on-primary text-[11px] font-label-caps font-bold uppercase tracking-wider">[DEMO PREVIEW - No Backend Connected]</span>
+<span class="text-[11px] text-primary-fixed-dim font-code-num hidden sm:inline">STATUS: CLIENT-SIDE SIMULATION ONLY</span>
+</div>
+<button aria-label="Close confirmation modal" class="text-primary-fixed-dim hover:text-on-primary p-1 transition-colors" onclick="window.closeRfqModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Content -->
+<div class="p-space-lg sm:p-space-xl flex flex-col gap-space-md">
+<!-- Header info -->
+<div class="flex items-start gap-4 pb-space-md border-b border-outline-variant">
+<div class="w-12 h-12 rounded bg-surface-container-low border border-outline-variant/60 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+<div class="flex-1">
+<div class="inline-flex items-center gap-2 mb-1">
+<span class="w-1.5 h-1.5 bg-secondary inline-block"></span>
+<span class="text-[11px] font-label-caps uppercase text-secondary font-bold tracking-wider">INTAKE DISPATCH CONFIRMATION</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface font-semibold" id="modal-title">Quotation Request Prepared</h3>
+<p class="text-body-sm text-on-surface-variant mt-1 leading-relaxed">The sourcing request manifest has been compiled client-side. Because this system is currently operating in front-end preview mode, no live procurement server has received the record.</p>
+</div>
+</div>
+<!-- Demo Reference Notice (Strictly no fake real IDs) -->
+<div class="p-space-sm bg-surface-bright border border-outline-variant rounded flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div>
+<div class="text-[11px] font-label-caps uppercase text-outline">Intake Identifier:</div>
+<div class="text-body-md font-code-num font-semibold text-primary">[RFQ Reference: Pending Backend Assignment]</div>
+</div>
+<span class="inline-block px-2.5 py-1 rounded bg-surface-container text-on-surface text-[11px] font-code-num border border-outline-variant/60">
+          DEMO-RFQ-UNASSIGNED (Generated in Demo Mode only)
+        </span>
+</div>
+<!-- Summary of preserved user input -->
+<div class="bg-surface-bright/50 border border-outline-variant/60 rounded p-space-md space-y-2.5 text-body-sm">
+<div class="flex items-center justify-between pb-1.5 border-b border-outline-variant/40">
+<span class="font-label-caps uppercase text-[11px] text-outline">Summary of Intake Payload</span>
+<span class="text-[11px] text-secondary font-medium">Form Data Retained</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+<div>
+<span class="text-outline block text-[11px]">Submitter Contact:</span>
+<span class="font-medium text-on-surface truncate block" id="modal-summary-contact">—</span>
+</div>
+<div>
+<span class="text-outline block text-[11px]">Organization / Entity:</span>
+<span class="font-medium text-on-surface truncate block" id="modal-summary-org">—</span>
+</div>
+<div>
+<span class="text-outline block text-[11px]">Product Category:</span>
+<span class="font-medium text-on-surface truncate block" id="modal-summary-category">—</span>
+</div>
+<div>
+<span class="text-outline block text-[11px]">Delivery Destination:</span>
+<span class="font-medium text-on-surface truncate block" id="modal-summary-destination">—</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/40 flex items-center justify-between text-[12px]"><span class="text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">attach_file</span>
+<span class="">No documentation files attached</span>
+</span>
+<span class="text-outline font-medium font-code-num">0 KB</span></div>
+</div>
+<!-- Standard Process Expectations -->
+<div class="p-space-sm bg-surface-container-low border border-outline-variant/40 rounded text-body-sm text-on-surface-variant flex items-start gap-2.5 leading-relaxed">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">info</span>
+<span class="">Upon backend deployment, standard review time is typically <strong>1–2 business days</strong> for requirement evaluation. Commercial terms remain governed by IDEA TRADE sourcing guidelines.</span>
+</div>
+<!-- Modal Actions -->
+<div class="flex flex-col sm:flex-row items-center justify-end gap-space-sm pt-space-sm border-t border-outline-variant">
+<button class="w-full sm:w-auto px-space-lg py-2.5 border border-outline-variant hover:bg-surface-container-low text-on-surface rounded text-title-md font-title-md transition-colors text-center" onclick="window.closeRfqModal()" type="button">
+          Edit / Return to Form
+        </button>
+<button class="w-full sm:w-auto px-space-lg py-2.5 bg-primary hover:bg-on-surface-variant text-on-primary rounded text-title-md font-title-md transition-colors text-center" onclick="window.closeRfqModal()" type="button">
+          Close Preview
+        </button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+<!-- SECTION 4: WHAT HAPPENS NEXT (QUOTE WORKFLOW) -->
+<section class="bg-primary-container text-on-primary py-space-xl border-y border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb-space-lg">
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="w-2 h-2 bg-secondary inline-block rounded-none"></span>
+<span class="text-label-caps font-label-caps uppercase text-secondary-fixed tracking-wider">QUOTE WORKFLOW</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-primary tracking-tight">
+            What Happens After You Submit
+          </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Step 01 -->
+<div class="bg-primary-container/80 border border-on-primary-container/30 p-space-md rounded flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-on-primary-container/20">
+<span class="text-label-caps font-label-caps text-secondary-fixed tracking-wider">STEP 01</span>
+<span class="material-symbols-outlined text-primary-fixed text-[18px]" data-icon="rule">rule</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-primary mb-space-xs">Requirement Review</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim leading-relaxed">
+                We review the submitted product information, quantities, delivery requirements, and available supporting documentation.
+              </p>
+</div>
+<div class="mt-space-md text-[10px] font-label-caps uppercase tracking-wider text-on-primary-container">
+              INTAKE AUDIT
+            </div>
+</div>
+<!-- Step 02 -->
+<div class="bg-primary-container/80 border border-on-primary-container/30 p-space-md rounded flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-on-primary-container/20">
+<span class="text-label-caps font-label-caps text-secondary-fixed tracking-wider">STEP 02</span>
+<span class="material-symbols-outlined text-primary-fixed text-[18px]" data-icon="hub">hub</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-primary mb-space-xs">Sourcing Evaluation</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim leading-relaxed">
+                Potential manufacturers, distributors, wholesalers, or specialized suppliers may be reviewed based on the requirement.
+              </p>
+</div>
+<div class="mt-space-md text-[10px] font-label-caps uppercase tracking-wider text-on-primary-container">
+              NETWORK MATCHING
+            </div>
+</div>
+<!-- Step 03 -->
+<div class="bg-primary-container/80 border border-on-primary-container/30 p-space-md rounded flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-on-primary-container/20">
+<span class="text-label-caps font-label-caps text-secondary-fixed tracking-wider">STEP 03</span>
+<span class="material-symbols-outlined text-primary-fixed text-[18px]" data-icon="receipt_long">receipt_long</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-primary mb-space-xs">Quotation Preparation</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim leading-relaxed">
+                Relevant product information, supplier pricing, estimated lead time, and commercial terms are organized for customer review.
+              </p>
+</div>
+<div class="mt-space-md text-[10px] font-label-caps uppercase tracking-wider text-on-primary-container">
+              COMMERCIAL PACKAGING
+            </div>
+</div>
+<!-- Step 04 -->
+<div class="bg-primary-container/80 border border-on-primary-container/30 p-space-md rounded flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-on-primary-container/20">
+<span class="text-label-caps font-label-caps text-secondary-fixed tracking-wider">STEP 04</span>
+<span class="material-symbols-outlined text-primary-fixed text-[18px]" data-icon="task_alt">task_alt</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-primary mb-space-xs">Customer Review</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim leading-relaxed">
+                The quotation is presented for review. If approved, applicable supplier communication, ordering, documentation, and fulfillment coordination may proceed.
+              </p>
+</div>
+<div class="mt-space-md text-[10px] font-label-caps uppercase tracking-wider text-on-primary-container">
+              EXECUTION DISPATCH
+            </div>
+</div>
+</div>
+<div class="mt-space-lg text-center">
+<p class="text-body-sm text-on-primary-container">
+            All reviews adhere to commercial availability without artificial or guaranteed timelines.
+          </p>
+</div>
+</div>
+</section>
+<!-- SECTION 5: COMPLEX OR MULTI-ITEM REQUIREMENTS -->
+<section class="max-w-7xl mx-auto px-margin py-space-xl border-b border-outline-variant">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5">
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="w-2 h-2 bg-secondary inline-block rounded-none"></span>
+<span class="text-label-caps font-label-caps uppercase text-secondary tracking-wider">MULTI-ITEM PROCUREMENT</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight mb-space-sm">
+            Submitting a Parts List or Larger Requirement?
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed mb-space-md">
+            For multi-item requirements, upload a spreadsheet, BOM, parts list, RFQ package, or available specifications. IDEA TRADE can evaluate multiple sourcing requirements through a consolidated intake process.
+          </p>
+<a class="inline-flex items-center justify-center gap-2 bg-surface-container-lowest border border-outline-variant hover:border-primary px-space-md py-space-sm rounded text-title-md font-title-md text-on-surface transition-colors w-full sm:w-auto min-h-[44px] text-center" href="#rfq-form">
+<span class="">Submit Multi-Item Requirement</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="attach_file">attach_file</span>
+</a>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest border border-outline-variant p-space-md rounded">
+<div class="flex items-center gap-2 mb-space-sm text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="table_chart">table_chart</span>
+<h3 class="text-title-md font-title-md text-on-surface font-semibold">Parts Lists &amp; BOMs</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Suitable for multiple line items, manufacturer part numbers, quantities, specifications, and delivery requirements. Upload consolidated spreadsheets for uniform commercial evaluation.
+            </p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant p-space-md rounded">
+<div class="flex items-center gap-2 mb-space-sm text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="calendar_month">calendar_month</span>
+<h3 class="text-title-md font-title-md text-on-surface font-semibold">Project &amp; Recurring Requirements</h3>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Suitable for project-based sourcing, recurring operational requirements, phased purchasing, or multiple delivery locations across varied timelines.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: INSTITUTIONAL & PUBLIC-SECTOR REQUESTS -->
+<section class="max-w-7xl mx-auto px-margin py-space-xl border-b border-outline-variant">
+<div class="bg-surface-bright border border-outline-variant p-space-lg lg:p-space-xl rounded">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="w-2 h-2 bg-secondary inline-block rounded-none"></span>
+<span class="text-label-caps font-label-caps uppercase text-secondary tracking-wider">INSTITUTIONAL &amp; PUBLIC-SECTOR REQUESTS</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight mb-space-sm">
+            Have a Solicitation or Defined Purchasing Requirement?
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed mb-space-md">
+            Organizations may submit solicitation information, specifications, required documentation, quantities, delivery requirements, or other available purchasing materials for review. IDEA TRADE evaluates sourcing opportunities based on the specific buyer requirement.
+          </p>
+<div class="p-space-sm bg-surface-container-lowest border border-outline-variant rounded mb-space-md">
+<p class="text-body-sm font-body-sm text-outline">
+<strong class="font-medium text-on-surface-variant">Notice on Eligibility:</strong> Eligibility requirements, purchasing procedures, documentation requirements, and award decisions are determined by the applicable purchasing organization.
+            </p>
+</div>
+<a class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-on-surface-variant text-on-primary px-space-md py-space-sm rounded text-title-md font-title-md transition-colors w-full sm:w-auto min-h-[44px] text-center" href="#rfq-form">
+<span class="">Submit Public-Sector Requirement</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="policy">policy</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FINAL CTA BANNER -->
+<section class="max-w-7xl mx-auto px-margin py-space-xl">
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-space-lg lg:p-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+<div class="max-w-2xl">
+<h2 class="text-headline-md font-headline-md text-on-surface tracking-tight mb-space-xs">
+            Ready to Request Pricing?
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Send us the product requirement and available documentation. We will review the information and evaluate suitable sourcing options.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md shrink-0 w-full sm:w-auto">
+<a class="bg-secondary hover:bg-on-secondary-fixed-variant text-on-primary px-space-lg py-space-sm rounded text-title-md font-title-md transition-colors min-h-[44px] inline-flex items-center justify-center w-full sm:w-auto text-center" data-route="request-a-quote" href="../request-a-quote/" target="_top">
+            Request a Quote
+          </a>
+<a class="bg-surface-container-lowest border border-outline-variant hover:bg-surface-container-low text-on-surface px-space-lg py-space-sm rounded text-title-md font-title-md transition-colors min-h-[44px] inline-flex items-center justify-center w-full sm:w-auto text-center" data-route="contact" href="../contact/" target="_top">
+            Contact Us
+          </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full bg-primary text-on-primary border-t border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin py-space-xl flex flex-col gap-space-lg w-full">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-space-md pb-space-lg border-b border-outline-variant/30">
+<div><div class="mb-2"><img alt="IDEA TRADE" class="h-10 w-auto object-contain block" src="./idea-trade-logo.png"/></div><p class="text-body-sm font-body-sm text-primary-fixed-dim max-w-xl">Sourcing • Procurement • Distribution</p></div>
+<div class="text-left md:text-right flex flex-col md:items-end gap-1"><span class="text-[10px] font-label-caps uppercase tracking-widest text-primary-fixed-dim">INSTITUTIONAL COMMERCE</span><address class="not-italic text-body-sm font-body-sm text-primary-fixed-dim flex flex-col md:items-end gap-0.5 mt-1"><span class="">225 E Broadway, Suite B103B, Glendale, CA 91205</span><a class="text-secondary-fixed hover:underline inline-flex items-center gap-1 transition-colors" href="mailto:office@idea-trade.com"><span class="material-symbols-outlined text-[14px]">mail</span>office@idea-trade.com</a></address></div>
+</div>
+<!-- Links Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 text-body-sm font-body-sm"><div class="flex flex-col"><a class="min-h-[44px] flex items-center text-primary-fixed-dim hover:text-secondary-fixed hover:underline transition-colors py-2.5" data-route="home" href="../" target="_top">Home</a><a class="min-h-[44px] flex items-center text-primary-fixed-dim hover:text-secondary-fixed hover:underline transition-colors py-2.5" data-route="capabilities" href="../capabilities/" target="_top">Capabilities</a><a class="min-h-[44px] flex items-center text-primary-fixed-dim hover:text-secondary-fixed hover:underline transition-colors py-2.5" data-route="products-industries" href="../products-industries/" target="_top">Products &amp; Industries</a></div><div class="flex flex-col"><a class="min-h-[44px] flex items-center text-primary-fixed-dim hover:text-secondary-fixed hover:underline transition-colors py-2.5" data-route="government-commercial" href="../government-commercial/" target="_top">Government &amp; Commercial</a><a class="min-h-[44px] flex items-center text-primary-fixed-dim hover:text-secondary-fixed hover:underline transition-colors py-2.5" data-route="suppliers" href="../suppliers/" target="_top">Suppliers</a></div><div class="flex flex-col"><a class="min-h-[44px] flex items-center text-primary-fixed-dim hover:text-secondary-fixed hover:underline transition-colors py-2.5" data-route="about" href="../about/" target="_top">About</a><a class="min-h-[44px] flex items-center text-primary-fixed-dim hover:text-secondary-fixed hover:underline transition-colors py-2.5" data-route="contact" href="../contact/" target="_top">Contact</a></div><div class="flex flex-col"><a class="min-h-[44px] flex items-center text-primary-fixed-dim hover:text-secondary-fixed hover:underline transition-colors py-2.5" data-route="privacy-policy" href="../privacy-policy/" target="_top">Privacy Policy</a><a class="min-h-[44px] flex items-center text-primary-fixed-dim hover:text-secondary-fixed hover:underline transition-colors py-2.5" data-route="terms-of-service" href="../terms-of-service/" target="_top">Terms of Service</a></div></div>
+<!-- Bottom Copyright & Legal -->
+<div class="pt-space-md border-t border-outline-variant/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs"><p class="text-body-sm font-body-sm text-primary-fixed-dim leading-relaxed">© 2026 IDEA TRADE. Sourcing • Procurement • Distribution. All rights reserved. Institutional and commercial procurement operations.</p><span class="text-[11px] font-code-num text-on-primary-container shrink-0">SYS-ID: RFQ-PUB-2026</span></div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Suppliers | IDEA TRADE</title>
+<meta name="description" content="Supplier information and business intake for companies interested in product categories, capabilities, and procurement communication.">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<meta property="og:title" content="Suppliers | IDEA TRADE">
+<meta property="og:description" content="Supplier information and business intake for companies interested in product categories, capabilities, and procurement communication.">
+<!-- Google Fonts: Raleway & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Raleway:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+
+
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  </style>
+<link href="./base.css" rel="stylesheet"/><link href="./responsive.css?v=header-standard-1" rel="stylesheet"/><meta content="noindex,nofollow" name="robots"/><script src="https://web3forms.com/client/script.js" async defer></script><script defer src="./preview.js"></script><script defer src="../form-handler.js"></script></head>
+<body class="bg-surface text-on-surface antialiased selection:bg-secondary selection:text-on-secondary min-h-screen flex flex-col">
+<!-- TOP APP BAR (Shared Component Execution) -->
+<header class="bg-surface-container-lowest dark:bg-surface-container-lowest border-b border-outline-variant dark:border-outline-variant sticky top-0 z-50"><div class="max-w-7xl mx-auto px-margin flex items-center justify-between h-16 w-full">
+<!-- Brand Logo -->
+<a class="flex flex-col justify-center" href="../" target="_top"><img alt="IDEA TRADE Logo" class="idt-header-logo object-contain shrink-0" src="./idea-trade-logo.png"/></a>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center space-x-6">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary dark:hover:text-secondary transition-colors" data-route="home" href="../" target="_top">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary dark:hover:text-secondary transition-colors" data-route="capabilities" href="../capabilities/" target="_top">Capabilities</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary dark:hover:text-secondary transition-colors" data-route="products-industries" href="../products-industries/" target="_top">Products &amp; Industries</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary dark:hover:text-secondary transition-colors" data-route="government-commercial" href="../government-commercial/" target="_top">Government &amp; Commercial</a>
+<a class="text-primary dark:text-primary border-b-2 border-secondary font-title-md text-title-md pb-1" data-route="suppliers" href="../suppliers/" style="border-color: rgb(217, 95, 42);" target="_top">Suppliers</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-body-md text-body-md pb-1 hover:text-secondary hover:border-secondary dark:hover:text-secondary transition-colors" data-route="about" href="../about/" target="_top">About</a>
+</nav>
+<!-- Trailing Action & Mobile Controls -->
+<div class="flex items-center space-x-3">
+<a class="hidden lg:inline-flex text-on-surface-variant hover:text-primary font-label-md text-label-md px-3 py-2 transition-colors" data-route="contact" href="../contact/" target="_top">Contact</a>
+<a class="bg-secondary text-on-secondary px-3 py-2 md:px-4 md:py-2 rounded-lg font-label-md text-label-md font-semibold hover:opacity-95 transition-opacity" data-route="request-a-quote" href="../request-a-quote/#rfq-form" style="background-color: rgb(217, 95, 42);" target="_top">Request a Quote</a>
+<button aria-controls="mobile-nav-drawer" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden p-2 text-primary hover:text-secondary focus:outline-none flex items-center justify-center rounded-lg" id="mobile-nav-toggle" >
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Collapsible Mobile Drawer -->
+<div class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant px-margin py-4" id="mobile-nav-drawer">
+<nav class="flex flex-col space-y-1">
+<a class="flex items-center text-on-surface-variant font-body-md py-3 px-2 rounded hover:bg-surface-container-low transition-colors" data-route="home" href="../" target="_top">Home</a>
+<a class="flex items-center text-on-surface-variant font-body-md py-3 px-2 rounded hover:bg-surface-container-low transition-colors" data-route="capabilities" href="../capabilities/" target="_top">Capabilities</a>
+<a class="flex items-center text-on-surface-variant font-body-md py-3 px-2 rounded hover:bg-surface-container-low transition-colors" data-route="products-industries" href="../products-industries/" target="_top">Products &amp; Industries</a>
+<a class="flex items-center text-on-surface-variant font-body-md py-3 px-2 rounded hover:bg-surface-container-low transition-colors" data-route="government-commercial" href="../government-commercial/" target="_top">Government &amp; Commercial</a>
+<a class="flex items-center text-primary font-title-md py-3 px-2 rounded bg-surface-container-low border-l-4 border-secondary" data-route="suppliers" href="../suppliers/" style="border-color: rgb(217, 95, 42);" target="_top">Suppliers</a>
+<a class="flex items-center text-on-surface-variant font-body-md py-3 px-2 rounded hover:bg-surface-container-low transition-colors" data-route="about" href="../about/" target="_top">About</a>
+<a class="flex items-center text-on-surface-variant font-body-md py-3 px-2 rounded hover:bg-surface-container-low transition-colors" data-route="contact" href="../contact/" target="_top">Contact</a>
+<div class="pt-3 mt-2 border-t border-outline-variant">
+<a class="block w-full text-center bg-secondary text-on-secondary py-3 px-4 rounded-lg font-label-md font-semibold hover:opacity-95 transition-opacity" data-route="request-a-quote" href="../request-a-quote/#rfq-form" style="background-color: rgb(217, 95, 42);" target="_top">Request a Quote</a>
+</div>
+</nav>
+</div></header>
+<!-- BREADCRUMB STRIP -->
+<section class="bg-surface border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin py-2 flex items-center space-x-2 text-body-sm font-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" data-route="home" href="../" target="_top">Home</a>
+<span class="text-outline">/</span>
+<span class="text-primary font-medium">Suppliers</span>
+</div>
+</section>
+<!-- HERO SECTION -->
+<section class="bg-surface-container-lowest border-b border-outline-variant py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Text Column -->
+<div class="lg:col-span-7 flex flex-col items-start pr-0 lg:pr-6">
+<div class="flex items-center space-x-2 mb-3">
+<span class="w-2 h-2 bg-secondary inline-block rounded-none" style="background-color: rgb(217, 95, 42);"></span>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider" style="color: rgb(217, 95, 42);">SUPPLIER RELATIONSHIPS</span>
+</div>
+<h1 class="text-display-hero font-display-hero text-primary tracking-tight mb-4">Connect With IDEA TRADE</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-6 leading-relaxed">
+            IDEA TRADE works with manufacturers, distributors, wholesalers, and specialized suppliers to identify sourcing options for commercial, institutional, and public-sector purchasing requirements. Suppliers interested in supporting future sourcing opportunities may submit company, product, and commercial information for review.
+          </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="bg-secondary text-on-secondary px-6 py-3 rounded-lg font-label-md text-label-md font-semibold hover:opacity-95 transition-all" data-route="suppliers" href="./#supplier-intake-form">Submit Supplier Information</a>
+<a class="bg-surface-container-lowest border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md font-semibold hover:bg-surface transition-all" data-route="contact" href="../contact/" target="_top">Contact Us</a>
+</div>
+</div>
+<!-- Image Column -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="border border-outline-variant rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-80 object-cover object-center block" data-alt="A clean, modern enterprise distribution center and high-density industrial logistics facility viewed from a high technical angle. Wide orderly aisles feature structural dark steel framework, heavy pallet racking systems loaded with uniform industrial crates, polished concrete floors reflecting technical ceiling illumination, and quiet logistical staging zones under clean, institutional daylight." src="./assets/image-02.jpg" alt="A clean, modern enterprise distribution center and high-density industrial logistics facility viewed from a high technical angle. Wide orderly aisles feature structural dark steel framework, heavy pallet racking systems loaded with uniform industrial crates, polished concrete floors reflecting technical ceiling illumination, and quiet logistical staging zones under clean, institutional daylight."/>
+<div class="px-4 py-3 bg-surface-container-low border-t border-outline-variant flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary font-bold" style="color: rgb(217, 95, 42);">SUPPLIER INTAKE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate ml-2">Company and product information submitted for potential future sourcing opportunities.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: WHO SHOULD CONNECT -->
+<section class="bg-surface py-space-xl border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb- space-lg">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider block mb-1" style="color: rgb(217, 95, 42);">WHO SHOULD CONNECT</span>
+<h2 class="text-headline-lg font-headline-lg text-primary tracking-tight mb-2">Supplier Types We Work With</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-3xl">IDEA TRADE may source products through different supplier types depending on the specific customer requirement.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mt-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5 flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low border border-outline-variant flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-base">factory</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Manufacturers</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Companies producing finished goods, components, equipment, specialized parts, or customer-specified products.</p>
+</div>
+<div class="mt-6 pt-3 border-t border-surface-container text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant">DIRECT PRODUCTION</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5 flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low border border-outline-variant flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-base">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Authorized &amp; Independent Distributors</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Distributors offering commercial access to manufacturer products, replacement parts, equipment, or specialized supply categories.</p>
+</div>
+<div class="mt-6 pt-3 border-t border-surface-container">
+<p class="font-body-sm text-body-sm text-outline italic">Authorization information is supplier-provided and subject to requirement review.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5 flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low border border-outline-variant flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-base">inventory_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Wholesalers</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Commercial suppliers supporting quantity-based purchasing across operational, institutional, and business product categories.</p>
+</div>
+<div class="mt-6 pt-3 border-t border-surface-container text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant">BULK / COMMERCIAL</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5 flex flex-col justify-between">
+<div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low border border-outline-variant flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-base">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Specialized Suppliers</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Suppliers serving technical, industrial, custom, niche, or requirement-specific sourcing needs.</p>
+</div>
+<div class="mt-6 pt-3 border-t border-surface-container text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant">TECHNICAL &amp; NICHE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SUPPLIER INFORMATION REVIEW -->
+<section class="bg-surface-container-lowest py-space-xl border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider block mb-1" style="color: rgb(217, 95, 42);">SUPPLIER INFORMATION</span>
+<h2 class="text-headline-lg font-headline-lg text-primary tracking-tight mb-2">What We Typically Review</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-3xl">Supplier information helps IDEA TRADE evaluate whether a company may be relevant to future sourcing requirements.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mt-6">
+<!-- Review 1 -->
+<div class="border border-outline-variant rounded-lg p-5 bg-surface-container-low flex flex-col">
+<div class="flex items-center space-x-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">domain</span>
+<span class="">Company Profile</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Company name, business location, website, years in operation, and primary contact information.</p>
+</div>
+<!-- Review 2 -->
+<div class="border border-outline-variant rounded-lg p-5 bg-surface-container-low flex flex-col">
+<div class="flex items-center space-x-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">category</span>
+<span class="">Product Categories</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Main products, brands, industries, components, or supply categories offered.</p>
+</div>
+<!-- Review 3 -->
+<div class="border border-outline-variant rounded-lg p-5 bg-surface-container-low flex flex-col">
+<div class="flex items-center space-x-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">payments</span>
+<span class="">Commercial Capabilities</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Typical order quantities, pricing structure, payment terms, lead times, and applicable commercial conditions.</p>
+</div>
+<!-- Review 4 -->
+<div class="border border-outline-variant rounded-lg p-5 bg-surface-container-low flex flex-col">
+<div class="flex items-center space-x-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">public</span>
+<span class="">Geographic Coverage</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Regions, states, countries, or delivery areas supported by the supplier.</p>
+</div>
+<!-- Review 5 -->
+<div class="border border-outline-variant rounded-lg p-5 bg-surface-container-low flex flex-col">
+<div class="flex items-center space-x-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">description</span>
+<span class="">Supporting Documentation</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Available product literature, line cards, catalogs, technical documents, company information, and applicable supplier-provided credentials.</p>
+</div>
+<!-- Review 6 -->
+<div class="border border-outline-variant rounded-lg p-5 bg-surface-container-low flex flex-col">
+<div class="flex items-center space-x-2 text-primary font-title-md text-title-md mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">local_shipping</span>
+<span class="">Fulfillment Capabilities</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Available shipping methods, order processing capabilities, delivery options, and fulfillment information.</p>
+</div>
+</div>
+<!-- Factual Callout -->
+<div class="mt-6 p-4 bg-surface border border-outline-variant rounded-lg flex items-start space-x-3">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5" style="color: rgb(217, 95, 42);">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Supplier information is reviewed in relation to specific sourcing requirements and does not constitute approval or preferred-supplier status.</span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: HOW SUPPLIER ENGAGEMENT WORKS (Dark Navy Section) -->
+<section class="bg-primary text-on-primary py-space-xl border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb-space-lg">
+<div class="flex items-center space-x-2 mb-2">
+<span class="w-2 h-2 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="font-label-caps text-label-caps text-secondary-fixed font-bold tracking-wider">HOW SUPPLIER ENGAGEMENT WORKS</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-primary tracking-tight">From Introduction to Sourcing Opportunity</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mt-8">
+<!-- Step 1 -->
+<div class="border border-on-surface-variant bg-surface-container-lowest/5 p-5 rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold block mb-2" style="color: rgb(217, 95, 42);">STEP 01</span>
+<h3 class="font-title-md text-title-md text-on-primary mb-3">Submit Company Information</h3>
+<p class="font-body-sm text-body-sm text-inverse-primary leading-relaxed">Provide your company profile, contact information, product categories, brands, and commercial capabilities.</p>
+</div>
+<div class="mt-6 pt-3 border-t border-on-surface-variant/40">
+<span class="font-label-caps text-label-caps text-secondary-fixed">Supplier Intake</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="border border-on-surface-variant bg-surface-container-lowest/5 p-5 rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold block mb-2" style="color: rgb(217, 95, 42);">STEP 02</span>
+<h3 class="font-title-md text-title-md text-on-primary mb-3">Information Review</h3>
+<p class="font-body-sm text-body-sm text-inverse-primary leading-relaxed">IDEA TRADE reviews submitted information to understand the supplier’s product scope and potential relevance to future sourcing requirements.</p>
+</div>
+<div class="mt-6 pt-3 border-t border-on-surface-variant/40">
+<span class="font-label-caps text-label-caps text-secondary-fixed">Information Review</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="border border-on-surface-variant bg-surface-container-lowest/5 p-5 rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold block mb-2" style="color: rgb(217, 95, 42);">STEP 03</span>
+<h3 class="font-title-md text-title-md text-on-primary mb-3">Requirement Matching</h3>
+<p class="font-body-sm text-body-sm text-inverse-primary leading-relaxed">When a customer requirement may align with the supplier’s capabilities, IDEA TRADE may contact the supplier for product, pricing, availability, or quotation information.</p>
+</div>
+<div class="mt-6 pt-3 border-t border-on-surface-variant/40">
+<span class="font-label-caps text-label-caps text-secondary-fixed">Requirement Matching</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="border border-on-surface-variant bg-surface-container-lowest/5 p-5 rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold block mb-2" style="color: rgb(217, 95, 42);">STEP 04</span>
+<h3 class="font-title-md text-title-md text-on-primary mb-3">Commercial Coordination</h3>
+<p class="font-body-sm text-body-sm text-inverse-primary leading-relaxed">If a supplier quotation supports a customer requirement, applicable commercial, order, documentation, and delivery details may be coordinated.</p>
+</div>
+<div class="mt-6 pt-3 border-t border-on-surface-variant/40">
+<span class="font-label-caps text-label-caps text-secondary-fixed">Commercial Coordination</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: PRODUCTS & CAPABILITIES OF INTEREST -->
+<section class="bg-surface py-space-xl border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider block mb-1" style="color: rgb(217, 95, 42);">SUPPLIER OPPORTUNITIES</span>
+<h2 class="text-headline-lg font-headline-lg text-primary tracking-tight mb-2">Products &amp; Capabilities of Interest</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-3xl">IDEA TRADE evaluates supplier capabilities across a broad range of commercial, industrial, institutional, and operational sourcing categories.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mt-6">
+<!-- Cat 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5">
+<div class="flex items-center space-x-3 mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">settings</span>
+<h3 class="font-title-md text-title-md text-primary">Industrial &amp; MRO Supplies</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Valves, fittings, bearings, electrical components, mechanical hardware, pneumatic parts, and heavy maintenance materials.</p>
+</div>
+<!-- Cat 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5">
+<div class="flex items-center space-x-3 mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">build</span>
+<h3 class="font-title-md text-title-md text-primary">Facilities &amp; Maintenance</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">HVAC components, facility maintenance hardware, lighting, sanitation systems, commercial plumbing, and safety gear.</p>
+</div>
+<!-- Cat 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5">
+<div class="flex items-center space-x-3 mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">memory</span>
+<h3 class="font-title-md text-title-md text-primary">Commercial Technology</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Enterprise networking hardware, rack servers, telecommunications gear, structured cabling, storage units, and infrastructure.</p>
+</div>
+<!-- Cat 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5">
+<div class="flex items-center space-x-3 mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">apartment</span>
+<h3 class="font-title-md text-title-md text-primary">Institutional &amp; Organizational Supplies</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Modular administrative furniture, classroom gear, healthcare utility supplies, and high-capacity institutional materials.</p>
+</div>
+<!-- Cat 5 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5">
+<div class="flex items-center space-x-3 mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">precision_manufacturing</span>
+<h3 class="font-title-md text-title-md text-primary">OEM &amp; Custom Components</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Precision CNC machining, industrial metal casting, injection-molded polymers, stampings, and engineered customer parts.</p>
+</div>
+<!-- Cat 6 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5">
+<div class="flex items-center space-x-3 mb-2">
+<span class="material-symbols-outlined text-secondary" style="color: rgb(217, 95, 42);">package_2</span>
+<h3 class="font-title-md text-title-md text-primary">General Business &amp; Operational Supplies</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Commercial packaging, shipping consumables, warehouse handling materials, office hardware, and distribution goods.</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-6">We also review supplier capabilities outside these representative categories when relevant to customer sourcing requirements.</p>
+</div>
+</section>
+<!-- SECTION 5: COMMERCIAL INFORMATION (SIDE-BY-SIDE PANELS) -->
+<section class="bg-surface-container-lowest py-space-xl border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider block mb-1" style="color: rgb(217, 95, 42);">COMMERCIAL INFORMATION</span>
+<h2 class="text-headline-lg font-headline-lg text-primary tracking-tight mb-2">Information That Helps Us Evaluate a Sourcing Fit</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mt-6">
+<!-- Left Panel -->
+<div class="border border-outline-variant rounded-lg bg-surface-container-low p-6">
+<div class="border-b border-outline-variant pb-3 mb-4 flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary">Product &amp; Supply Information</h3>
+<span class="material-symbols-outlined text-outline">inventory</span>
+</div>
+<ul class="space-y-2.5 text-body-md font-body-md text-on-surface">
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Product categories and brands</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Manufacturer relationships</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Product specifications</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Available catalogs or line cards</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Typical availability</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Minimum order quantities where applicable</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Custom or specification-based capabilities</span>
+</li>
+</ul>
+</div>
+<!-- Right Panel -->
+<div class="border border-outline-variant rounded-lg bg-surface-container-low p-6">
+<div class="border-b border-outline-variant pb-3 mb-4 flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary">Commercial &amp; Fulfillment Information</h3>
+<span class="material-symbols-outlined text-outline">local_shipping</span>
+</div>
+<ul class="space-y-2.5 text-body-md font-body-md text-on-surface">
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Pricing structure</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Typical lead times</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Payment terms</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Shipping locations</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Delivery coverage</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Available fulfillment methods</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="w-1.5 h-1.5 bg-secondary inline-block" style="background-color: rgb(217, 95, 42);"></span>
+<span class="">Primary commercial contact</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-4 text-body-sm font-body-sm text-outline italic">
+        All information should reflect the supplier’s current capabilities and commercial terms.
+      </div>
+</div>
+</section>
+<!-- SECTION 6: SUPPLIER INTAKE FORM -->
+<section class="bg-surface py-space-xl border-b border-outline-variant" id="supplier-intake-form">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider block mb-1" style="color: rgb(217, 95, 42);">SUPPLIER SUBMISSION</span>
+<h2 class="text-headline-lg font-headline-lg text-primary tracking-tight mb-2">Introduce Your Company</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-3xl">Submit your company and product information for potential consideration in future IDEA TRADE sourcing requirements.</p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6 lg:p-8 mt-6">
+<form action="https://api.web3forms.com/submit" class="space-y-6" data-web3forms-subject="IDEA TRADE - Supplier Application" method="post">
+<input name="access_key" type="hidden" value="d5949826-985f-47bf-93e7-698a39c4e880"/><input name="subject" type="hidden" value="IDEA TRADE - Supplier Application"/><input name="from_name" type="hidden" value="IDEA TRADE Supplier Information"/><input aria-hidden="true" autocomplete="off" name="botcheck" tabindex="-1" type="checkbox" value="1" style="display:none"/><div class="h-captcha" data-captcha="true"></div>
+<!-- Company Basics Section -->
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant border-b border-outline-variant pb-2 mb-4">1. COMPANY PROFILE</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Company Name *</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="Legal Entity Name" name="company_name" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Website</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="https://" name="website" type="url"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Supplier Type *</label>
+<select name="supplier_type" class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" required="">
+<option value="">Select Classification</option>
+<option value="Manufacturer">Manufacturer</option>
+<option value="Distributor">Distributor</option>
+<option value="Wholesaler">Wholesaler</option>
+<option value="Specialized Supplier">Specialized Supplier</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md text-primary mb-1">Company Address *</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="Street Address / Facility" name="company_address" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">City</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="City" name="city" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">State / Region</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="State or Province" name="state_region" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Country *</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="Country of Operation" name="country" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Geographic Coverage</label>
+<select name="geographic_coverage" class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0">
+<option value="">Select Scope</option>
+<option value="Regional">Regional</option>
+<option value="National US">National US</option>
+<option value="North America">North America</option>
+<option value="Global">Global</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Contact Section -->
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant border-b border-outline-variant pb-2 mb-4">2. PRIMARY CONTACT</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Primary Contact Name *</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="Full Name" name="contact_name" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Job Title</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="Role / Department" name="job_title" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Business Email *</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="corporate@company.com" name="email" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Phone Number</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="+1 (555) 000-0000" name="phone" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Commercial & Capabilities Section -->
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant border-b border-outline-variant pb-2 mb-4">3. PRODUCTS &amp; COMMERCIAL DETAILS</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-4">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Primary Product Categories *</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="e.g. Industrial Valves, CNC Components, MRO Fasteners" name="product_categories" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Brands / Manufacturers Represented</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="Specific brands or internal proprietary labels" name="brands" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Typical Lead Time</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="e.g. 2-4 weeks" name="lead_time" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Minimum Order Quantity</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="e.g. None / Case Lot / 500 pcs" name="minimum_order_quantity" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Payment Terms</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="e.g. Net 30, Prepayment, Wire" name="payment_terms" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Fulfillment / Shipping</label>
+<input class="w-full h-10 px-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="e.g. Freight LTL, FOB origin" name="fulfillment_shipping" type="text"/>
+</div>
+</div>
+</div>
+<!-- Narrative Inputs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Company Description</label>
+<textarea class="w-full p-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="Summary of manufacturing capacity, warehouse footprint, or key trade specialties..." name="company_description" rows="3"></textarea>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Additional Notes</label>
+<textarea class="w-full p-3 border border-outline-variant rounded-lg text-body-md font-body-md bg-surface-container-lowest focus:border-primary focus:ring-0" placeholder="Any special commercial requirements, specific industry focus, or relevant operational conditions..." name="additional_notes" rows="3"></textarea>
+</div>
+</div>
+<!-- Documentation Information -->
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Supporting Documentation</label>
+<div class="border border-outline-variant rounded-lg p-6 bg-surface-container-low">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5" style="color: rgb(217, 95, 42);">info</span>
+<div>
+<p class="font-title-md text-title-md text-primary">File attachments are not currently supported.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Please describe your products, capabilities, and available documentation in the existing form fields above.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="pt-2 flex flex-wrap items-center gap-4">
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-lg font-label-md text-label-md font-semibold hover:opacity-95 transition-all" style="background-color: rgb(217, 95, 42);" type="submit">Submit Supplier Information</button>
+<button class="bg-surface-container-lowest border border-outline-variant text-primary px-6 py-3 rounded-lg font-label-md text-label-md font-semibold hover:bg-surface transition-all" type="button">Contact Procurement</button>
+</div>
+<label class="idt-check"><input name="privacy_agreement" required="" type="checkbox"/><span>I have read the <a href="../privacy-policy/" target="_top">Privacy Policy</a> and agree that IDEA TRADE may use this information to review my inquiry.</span></label>
+<!-- Critical Mandatory Disclaimer -->
+<div class="pt-2">
+<p class="font-body-sm text-body-sm text-outline border-t border-outline-variant pt-3">
+              Submission of supplier information does not guarantee approved-vendor status, sourcing opportunities, purchase orders, or future business.
+            </p>
+</div>
+<p class="idt-form-status" hidden="" role="status"></p>
+</form>
+</div>
+</div>
+</section>
+<!-- SECTION 7: SUPPLIER COMMUNICATION -->
+<section class="bg-surface py-space-xl border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider block mb-1" style="color: rgb(217, 95, 42);">SUPPLIER COMMUNICATION</span>
+<h2 class="text-headline-lg font-headline-lg text-primary tracking-tight mb-2">When We May Contact You</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-3xl">IDEA TRADE may contact suppliers when a current or future sourcing requirement appears relevant to the products or capabilities submitted.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-6">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low border border-outline-variant flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-base">timelapse</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Product Availability</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Requests for current product availability, lead time, quantity, or applicable alternatives.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low border border-outline-variant flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-base">request_quote</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Quotation Requests</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Requests for pricing, commercial terms, shipment information, and quotation validity.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low border border-outline-variant flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Product &amp; Documentation Information</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Requests for product specifications, manufacturer information, supporting documentation, or other details relevant to a sourcing requirement.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- BOTTOM CTA BANNER -->
+<section class="bg-surface-container-lowest py-space-xl border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="bg-surface border border-outline-variant rounded-lg p-8 lg:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider block mb-1" style="color: rgb(217, 95, 42);">SUPPLIER INTAKE</span>
+<h2 class="text-headline-lg font-headline-lg text-primary tracking-tight mb-2">Interested in Supporting Future Sourcing Requirements?</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Introduce your company, product categories, brands, commercial capabilities, and delivery coverage.</p>
+<p class="text-body-sm font-body-sm text-outline">Supplier engagement is requirement-driven and subject to applicable product, commercial, customer, and sourcing conditions.</p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+<a class="bg-secondary text-on-secondary px-5 py-3 rounded-lg font-label-md text-label-md font-semibold text-center hover:opacity-95 transition-all" data-route="suppliers" href="./#supplier-intake-form">Submit Supplier Information</a>
+<a class="bg-surface-container-lowest border border-outline-variant text-primary px-5 py-3 rounded-lg font-label-md text-label-md font-semibold text-center hover:bg-surface transition-all" data-route="contact" href="../contact/" target="_top">Contact Us</a>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER (Shared Component Execution) -->
+<footer class="bg-primary dark:bg-primary text-on-primary dark:text-on-primary border-t border-outline-variant dark:border-outline-variant mt-auto"><div class="max-w-7xl mx-auto px-margin py-space-xl flex flex-col gap-space-lg w-full">
+<!-- Responsive Footer Columns -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
+<!-- Column 1: Brand & Overview -->
+<div class="flex flex-col space-y-3 sm:col-span-2 lg:col-span-1">
+<div class="flex flex-col items-start gap-2"><a class="inline-block mb-1" href="../" target="_top"><img alt="IDEA TRADE" class="h-10 w-auto object-contain block" src="./idea-trade-logo.png"/></a><span class="font-label-caps text-label-caps text-primary-fixed-dim tracking-wider">Sourcing • Procurement • Distribution</span></div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim dark:text-primary-fixed-dim max-w-md leading-relaxed">
+        Structured requirement-based sourcing and procurement execution for commercial organizations, institutions, and public-sector operations.
+      </p>
+<div class="text-body-sm font-body-sm text-primary-fixed-dim space-y-1 pt-2 border-t border-on-surface-variant/30"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-base text-secondary-fixed shrink-0 mt-0.5" style="color: #ffdbce;">location_on</span><span class="">225 E Broadway, Suite B103B, Glendale, CA 91205</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-secondary-fixed shrink-0" style="color: #ffdbce;">mail</span><a class="hover:text-secondary-fixed hover:underline transition-colors" href="mailto:office@idea-trade.com">office@idea-trade.com</a></div></div></div>
+<!-- Column 2: Core Solutions & Directories -->
+<div class="flex flex-col space-y-1">
+<span class="font-label-caps text-label-caps text-secondary-fixed font-bold tracking-wider mb-2 block" style="color: #ffdbce;">NAVIGATION</span>
+<a class="text-primary-fixed-dim dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed hover:underline transition-colors min-h-[44px] flex items-center" data-route="home" href="../" target="_top">Home</a>
+<a class="text-primary-fixed-dim dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed hover:underline transition-colors min-h-[44px] flex items-center" data-route="capabilities" href="../capabilities/" target="_top">Capabilities</a>
+<a class="text-primary-fixed-dim dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed hover:underline transition-colors min-h-[44px] flex items-center" data-route="products-industries" href="../products-industries/" target="_top">Products &amp; Industries</a>
+<a class="text-primary-fixed-dim dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed hover:underline transition-colors min-h-[44px] flex items-center" data-route="government-commercial" href="../government-commercial/" target="_top">Government &amp; Commercial</a>
+</div>
+<!-- Column 3: Partner & Engagement -->
+<div class="flex flex-col space-y-1">
+<span class="font-label-caps text-label-caps text-secondary-fixed font-bold tracking-wider mb-2 block" style="color: #ffdbce;">ENGAGEMENT</span>
+<a class="text-on-primary dark:text-on-primary font-body-sm text-body-sm underline min-h-[44px] flex items-center" data-route="suppliers" href="../suppliers/" target="_top">Suppliers</a>
+<a class="text-primary-fixed-dim dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed hover:underline transition-colors min-h-[44px] flex items-center" data-route="about" href="../about/" target="_top">About</a>
+<a class="text-primary-fixed-dim dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed hover:underline transition-colors min-h-[44px] flex items-center" data-route="contact" href="../contact/" target="_top">Contact</a>
+<a class="text-primary-fixed-dim dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed hover:underline transition-colors min-h-[44px] flex items-center" data-route="privacy-policy" href="../privacy-policy/" target="_top">Privacy Policy</a>
+<a class="text-primary-fixed-dim dark:text-primary-fixed-dim font-body-sm text-body-sm hover:text-secondary-fixed hover:underline transition-colors min-h-[44px] flex items-center" data-route="terms-of-service" href="../terms-of-service/" target="_top">Terms of Service</a>
+</div>
+<!-- Column 4: Procurement Action -->
+<div class="flex flex-col space-y-3 sm:col-span-2 lg:col-span-1">
+<span class="font-label-caps text-label-caps text-secondary-fixed font-bold tracking-wider mb-1 block" style="color: #ffdbce;">REQUEST SOURCING</span>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">
+        Submit specifications, quantities, and delivery timelines for active or planned institutional procurement.
+      </p>
+<div class="pt-1">
+<a class="inline-flex items-center justify-center bg-secondary text-on-secondary px-5 py-2.5 rounded-lg font-label-md text-label-md font-semibold hover:opacity-95 transition-opacity min-h-[44px]" data-route="request-a-quote" href="../request-a-quote/#rfq-form" style="background-color: #d95f2a;" target="_top">Request a Quote</a>
+</div>
+</div>
+</div>
+<!-- Bottom Sub-bar: Responsive Metadata & Copyright -->
+<div class="border-t border-on-surface-variant/30 pt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-primary-fixed-dim dark:text-primary-fixed-dim">
+<span class="">© 2026 IDEA TRADE. Sourcing • Procurement • Distribution. All rights reserved. Institutional and commercial procurement operations.</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Institutional &amp; Commercial Procurement Operations</span>
+</div>
+</div></footer>
+</body></html>

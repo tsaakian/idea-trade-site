@@ -1,0 +1,136 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.idt-header-logo {
+  width: 115px !important;
+  height: auto !important;
+  max-width: none !important;
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --spacing-margin: 1.5rem;
+    --spacing-space-xl: 2rem;
+  }
+
+  header > div:first-child {
+    height: 4rem;
+    min-height: 4rem;
+    padding-inline: 1rem;
+  }
+
+  header > div:first-child > nav,
+  header > div:first-child > div > a[data-route="contact"] {
+    display: none !important;
+  }
+
+  header > div:first-child > div > button {
+    display: inline-flex !important;
+  }
+
+  #mobile-drawer {
+    position: absolute;
+    inset-inline: 0;
+    top: 4rem;
+    z-index: 60;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    box-shadow: 0 12px 24px rgb(15 23 42 / 14%);
+  }
+
+  #mobile-drawer:not(.hidden) {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --spacing-margin: 1rem;
+    --spacing-space-xl: 1.5rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  header > div:first-child > div:first-child > a > img.idt-header-logo {
+    width: 100px !important;
+  }
+
+  header > div:first-child > div {
+    gap: 0.5rem !important;
+  }
+
+  header > div:first-child > div > button {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+  }
+
+  #mobile-drawer {
+    padding: 1rem;
+    background: #131b2e;
+    border-color: #3b485d;
+    color: #ffffff;
+  }
+
+  #mobile-drawer nav {
+    gap: 0.25rem;
+  }
+
+  #mobile-drawer nav a {
+    min-height: 3rem;
+    padding: 0.75rem 0.875rem;
+    color: #dae2fd;
+  }
+
+  #mobile-drawer nav a[data-route="government-commercial"] {
+    color: #ffffff;
+    background: #1d2940;
+    border-left: 4px solid #d95f2a;
+  }
+
+  #mobile-drawer > div {
+    border-color: #3b485d;
+  }
+
+  .text-display-hero {
+    font-size: clamp(2rem, 9vw, 2.5rem);
+    line-height: 1.15;
+  }
+
+  .text-headline-lg {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .text-body-lg,
+  .text-body-md,
+  .text-body-sm {
+    line-height: 1.55;
+  }
+
+  .py-space-xl {
+    padding-block: 2.5rem;
+  }
+
+  .px-margin {
+    padding-inline: 1rem;
+  }
+
+  footer {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  footer .max-w-7xl {
+    padding-inline: 1rem;
+  }
+}
